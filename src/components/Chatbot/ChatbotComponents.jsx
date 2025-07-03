@@ -148,11 +148,11 @@ const ChatbotComponent = () => {
           <>
             <div className="chatbot-header">
               <span role="img" aria-label="Chatbot icon">
-                :robot_face:
+                🤖
               </span>
               <h2>Educational Chatbot</h2>
               <button className="chatbot-close-button" onClick={toggleChat}>
-                :x:
+                ❌
               </button>
             </div>
             {isKnowledgeBaseLoading && (
@@ -165,7 +165,7 @@ const ChatbotComponent = () => {
             )}
             {!isOnline && (
               <p className="chatbot-message offline-message">
-                :no_entry_sign:: You are currently offline. Please check your internet
+                🚫: You are currently offline. Please check your internet
                 connection.
               </p>
             )}
@@ -173,7 +173,7 @@ const ChatbotComponent = () => {
               {messages.map((message, index) => (
                 <div key={index} className={`message-row ${message.sender}`}>
                   {message.sender === "bot" && (
-                    <div className="avatar bot-avatar">:robot_face:</div>
+                    <div className="avatar bot-avatar">🤖</div>
                   )}
                   <p className={`${message.sender}-message`}>{message.text}</p>
                   {message.sender === "user" && (
@@ -183,7 +183,7 @@ const ChatbotComponent = () => {
               ))}
               {loading && (
                 <div className="message-row bot">
-                  <div className="avatar bot-avatar">:robot_face:</div>
+                  <div className="avatar bot-avatar">🤖</div>
                   <p className="bot-message loading-indicator">Typing...</p>
                 </div>
               )}
