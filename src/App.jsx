@@ -9,7 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import AdmissionPage from "./pages/AdmissionPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import HomePage from "./pages/Homepage";
+import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import { useState } from "react";
 import DeveloperInfoPopup from "./components/DeveloperInfo/DevelopInfoPopup";
