@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-// import './App.css'
+import './App.css'
 import "./styles/Pages.css";
 import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
 import AboutPage from "./pages/AboutPage";
